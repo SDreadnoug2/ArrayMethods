@@ -101,3 +101,10 @@ const sum = theArray.reduce((acc, val) => {
 // 0 is starting value
 //e.g. 2 making an object and using it as they key / reducing the array to a map.
 const mappedValues = 
+
+//reduce right - works like reduce method, but starts from the right hand side of the array.
+const arr = [1, 2, 3, 4, 5];
+const sum = arr.reduceRight((prev, curr) => {
+  return prev + curr;
+});
+console.log(sum); //output 15
